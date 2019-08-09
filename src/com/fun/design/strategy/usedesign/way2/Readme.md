@@ -1,0 +1,1 @@
+该方式是将context传递给strategy
