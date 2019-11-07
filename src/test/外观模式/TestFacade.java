@@ -17,10 +17,7 @@ public class TestFacade {
     public static void main(String[] args) {
         Facade f = new Facade();
         f.test();
-
         AService aService = new AServiceImpl();
-
-
     }
 
 
