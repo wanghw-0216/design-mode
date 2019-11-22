@@ -13,12 +13,6 @@ import com.fun.design.工厂方法模式.productor.ProductorApi;
  */
 public class ClientCode {
     public static void main(String[] args) {
-        String s = "3103934";
-        Object obj = "3103934	";
-        String s1 = obj.toString();
-        String trim = s1.trim();
-        System.out.println("s1 ===" + trim);
-
         FactoryCreator fc = new FactoryCreatorAImpl();
         fc.doSomething();
     }
