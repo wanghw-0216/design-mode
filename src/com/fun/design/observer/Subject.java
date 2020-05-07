@@ -1,6 +1,8 @@
 package com.fun.design.observer;
 
 
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author whw
@@ -10,6 +12,7 @@ package com.fun.design.observer;
  * @return
  */
 public interface Subject {
+
     /**
      * @Author whw
      * @Description //注册成为观察者
@@ -39,4 +42,8 @@ public interface Subject {
      * @return
      */
     public void notifyObserve();
+
+
+
+
 }

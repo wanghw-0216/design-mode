@@ -9,4 +9,6 @@ package com.fun.design.observer;
  */
 public interface Observer {
     public void updateStatus(float temparature, float humidity, float pressure);
+
+    void getNewsPaper();
 }

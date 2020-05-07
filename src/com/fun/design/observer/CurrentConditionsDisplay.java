@@ -24,6 +24,11 @@ public class CurrentConditionsDisplay implements Observer {
         display();
     }
 
+    @Override
+    public void getNewsPaper() {
+
+    }
+
     private void display() {
         System.out.println("current conditions " + temparature + "F degrees and " + humidity);
     }

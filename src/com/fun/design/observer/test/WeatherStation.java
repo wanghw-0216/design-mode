@@ -1,6 +1,8 @@
 package com.fun.design.observer.test;
 
 import com.fun.design.observer.CurrentConditionsDisplay;
+import com.fun.design.observer.NewsPaper;
+import com.fun.design.observer.Reader;
 import com.fun.design.observer.WeathreData;
 
 /**
@@ -12,8 +14,15 @@ import com.fun.design.observer.WeathreData;
  */
 public class WeatherStation {
     public static void main(String[] args) {
-        WeathreData weathreData = new WeathreData();
-        CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weathreData);
-        weathreData.setMeasureements(10 , 555 , 30.1f);
+        Reader reader1 = new Reader("张三");
+        Reader reader2 = new Reader("李四");
+        Reader reader3 = new Reader("赵五");
+        NewsPaper newsPaper = new NewsPaper();
+        newsPaper.registerObserver(reader1);
+        newsPaper.registerObserver(reader2);
+        newsPaper.registerObserver(reader3);
+        newsPaper.removeObserver(reader2);
+        newsPaper.publishPaper();
+
     }
 }
